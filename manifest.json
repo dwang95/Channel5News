@@ -1,0 +1,17 @@
+{
+    "name": "Channel 5 Extension",
+    "manifest_version": 2,
+    "version": "0.5",
+    "description": "Sometimes changes the spelling of words and names in the style of Dr. Steve Brule from the Tim and Eric show. Also adds various 80's TV style transition screens when changing pages, also from the Tim and Eric show.",
+    "author": "Tianlu Wang",
+
+    "content_scripts":
+    [
+        {
+            "matches": ["*://*/*"],
+            "all_frames": true,
+            "js": ["content_script.js"],
+            "run_at": "document_end"
+        }
+    ]
+}
